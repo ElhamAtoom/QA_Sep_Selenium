@@ -15,12 +15,10 @@ public class Mouseovernew {
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://www.flipkart.com/");
 		driver.findElement(By.xpath("//button[text()='✕']")).click();
-		driver.findElement(By.xpath("//div[text()='Electronics']")).click();
-		WebElement ele=driver.findElement(By.xpath("//span[@class='_2I9KP_'][1]"));
+		WebElement ele= driver.findElement(By.xpath("//div[text()='Electronics']"));
 		Actions Builder =new Actions(driver);
 		Builder.moveToElement(ele).perform();
-		driver.findElement(By.linkText("Asus")).click();
-
+		driver.findElement(By.linkText("Gaming")).click();
 	}
 
 }
